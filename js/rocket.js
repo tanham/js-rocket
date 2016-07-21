@@ -14,13 +14,21 @@ var changeState = function (state){
 			countdownNumber = countdownNumber - 1;
 			document.getElementById('countdown').innerHTML = countdownNumber;
 			
+			if (countdownNumber == 5) {
+				//be nervous
+			};
+
+			if (countdownNumber == 3) {
+				//can't wait
+			};
+
 
 			if (countdownNumber <= 0) {
 				
 				changeState(3);
-			}
+			};
 
-		}, 1000);
+		}, 500);
 		
 	} else if (state == 3) {
 		var success = setTimeout(function ()
@@ -29,7 +37,7 @@ var changeState = function (state){
 				console.log('randomNumber:', randomNumber)
 
 			//success
-			if (randomNumber > 5) {
+			if (randomNumber > 1) {
 			changeState(4);
 			} else { 
 			changeState(5); //oh no!!
