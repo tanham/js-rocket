@@ -1,11 +1,36 @@
+body { 
+	font-family: "Courier New";
+ }
+
 .left { 
-	background-color: coral;
+	background-color: hotpink;
 	position: fixed;
 	width: 50%;
 	height: 100%; 	
 	top: 0;
 	left:0;
 
+ }
+
+ .interface {
+ 	text-align: center;
+ 	padding: 20px;
+ }
+
+ a.button { 
+	display: inline-block;
+	background-color: white;
+	color: black;
+	padding: 20px 40px;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 10px;
+	transition: color 300ms;
+
+  }
+
+a:hover { 
+	color: hotpink;
  }
 
 .right { 
